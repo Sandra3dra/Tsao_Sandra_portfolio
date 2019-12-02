@@ -1,6 +1,6 @@
 # Tsao_Sandra_portfolio
 
-![Sandra's Portfolio Logo](/public/images/sandra_tsao.png)
+![Sandra's Portfolio Logo](/public/images/sandra_tsao_banner.png)
 
 Nice to meet you. I'm Sandra Tsao.  
 This is my portfolio site:)
