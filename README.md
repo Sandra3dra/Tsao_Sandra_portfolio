@@ -1,43 +1,29 @@
 # Tsao_Sandra_portfolio
 
-![Sandra's Portfolio Logo](/public/images/bamboo_slate.png)
+![Sandra's Portfolio Logo](/public/images/sandra_tsao.svg)
 
-Take handwritten notes and ideas further with Bamboo Slate. Write naturally with pen on any paper, then store, shape and share your notes and ideas in the cloud.
+Nice to meet you. I'm Sandra Tsao.  
+This is my portfolio site:)
 
-## Website is live at Heroku
-Head there now - https://tsao-sandra-hw1.herokuapp.com/
-
+## Website is live at HostPapa
+Head there now - https://sandratsao.com/
 
 ## Built with
+* **PHP**
 * **HTML5**
 * **SASS/CSS3**
 * **JavaScript**
-**Node JS**
-**Express**
 
 
-## Packages to Install (Developers)
-
-If you run the `cat package.json` command, you'll see that you need these packages to run the program:
-
-* NPM
-* Node JS
-* Express
-
-
-To install: `npm install`
-
-## Workspaces (Designers)
+## Workspaces (Design)
 * Adobe Photoshop/Illustrator
+* Adobe After Effect
+* Cinema 4D Education
 
 ## Authors
 
 * **Sandra** - *Back-End & Front-end* - https://github.com/SandraTsao
 
-## Acknowledgment/References
-* Icon made by [http://www.freepik.com] from www.flaticon.com
-* Wacom official website [https://www.wacom.com/en-ca/products/smartpads/bamboo-slate]
-
 ## Future Plans
-- Add CSS animations
-- Add CSS transitions
+- Design Improvements
+- Front-end enhancements
