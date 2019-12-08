@@ -16,7 +16,7 @@ $name = '';
 $email = '';
 $subject = '';
 $message = '';
-$recipient = 's_tsao@fanshaweonline.ca';
+$recipient = 'SandraTsao2019@gmail.com';
 
 // to make a field required, kill the function if the value is "empty"
 //Use GET to pass along message ?=true or ?=false to redirect users after form is sent + make thank you message pop up in JS
@@ -44,18 +44,17 @@ if (isset($_POST['message'])) {
 //This makes sure internet sees that the email is coming from your server, and your domain, and that they match (they are not suspicious)
 
 //SEND OUT EMAIL
-// $headers = array(
-//     'From'=>'noreply@domainname.ca',
-//     'Reply=To'=>$name.'<'.$email.'>'
-// );
+$headers = array(
+    'From'=>$name.'<'.$email.'>',
+    'Reply=To'=>'noreply@sandratsao.ca'
+);
 
 // if(mail($recipient, $subject, $message, $headers)){
-if(mail($recipient, $subject, $message)){
-    echo '<p>Thank you for contacting me, '.$name.'</p>';
+if(mail($recipient, $subject, $message, $headers)){
+    echo '<p>Thank you for contacting me, '.$name.'</p>
+        <p>I will get back to you within two business days.</p>  ';
 }else{
     echo '<p>I am sorry, but the mail did not go through :(</p>';
 }
-
-
 
 ?>
