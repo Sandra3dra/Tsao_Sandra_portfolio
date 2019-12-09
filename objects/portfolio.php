@@ -21,11 +21,8 @@ class Projects{
     }
 
     public function getProjByID($id){
-        // test to see if site recieving id
-        // echo $id;
-        // exit;
 
-        $query = 'SELECT * FROM `tbl_projects` WHERE `ID` =' . $id;
+        $query = 'SELECT * FROM `tbl_projects` WHERE `ID` ='.$id;
 
         $stmt = $this->conn->prepare($query);
 

@@ -5,6 +5,19 @@
     <title>Sandra Tsao</title>
 </head>
 <body>
+
+    <div id="videoWrapper">
+        <p>X</p>
+        <video controls autoplay muted>
+            <source src="/public/media/Tsao_S_demoreel.mp4"
+                    type="video/mp4">
+            <source src="/public/media/Tsao_S_demoreel.webm"
+                    type="video/webm">
+            <source src="/public/media/Tsao_S_demoreel.ogg"
+                    type="video/ogg">
+            Sorry, your browser doesn't support embedded videos :(
+        </video>
+    </div>
     
     <h1 class="hidden">Sandra Tsao's Portfolio</h1>
     <?php include 'header.php';?>
@@ -52,7 +65,7 @@
             if($num>0):?>
 
                 <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
-                    <a href="portfolio.php?id=<?php echo $row['ID'];?>"><h3><?php echo $row["title"];?></h3></a>
+                    <a href="/portfolios.php?id=<?php echo $row['ID'];?>"><h3><?php echo $row["title"];?></h3></a>
                     <img class="hover_img" src="/public/images/<?php echo $row["hover_img"];?>" alt="hover images">
                 <?php endwhile; else:?>
                     <h1>Portfolio missing</h1>
