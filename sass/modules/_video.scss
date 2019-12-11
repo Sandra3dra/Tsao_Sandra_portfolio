@@ -1,0 +1,21 @@
+#videoWrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: rgb(255, 255, 255, 0.8);
+    #videoExit {
+        font-family: $p-font;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: 5%;
+        margin-top: 5%;
+        width: 3%;
+    }
+    video {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+}

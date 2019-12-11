@@ -1,0 +1,62 @@
+#contact {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    h2 {
+        font-size: 25px;
+    }
+    #contactWrapper {
+        margin-top: 10%;
+        .yBox {
+            display: none;
+        }
+        #contactForm {
+            width: 97%;
+            border: rgb(255, 231, 179) solid 5px;
+            background-color: rgb(67, 67, 69, 0.3);
+            #conTop {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 5%;
+                width: 100%;
+                .conRow {
+                    display: flex;
+                    flex-direction: row;
+                    width: 90%;
+                    justify-content: space-between;
+                    margin-bottom: 3%;
+                }
+                label {
+                    font-family: $p-font;
+                    color: white;
+                    font-size: 14px;
+                }
+                input {
+                    width: 60%;
+                    border: $box-y solid 3px;
+                }
+                textarea {
+                    width: 59%;
+                    border: $box-y solid 3px;
+                    height: 60px;
+                }
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 3%;
+                button {
+                    width: 90%;
+                    background-color: $hov-y;
+                    color: white;
+                    height: 30px;
+                    font-size: 14px;
+                    font-family: $p-font;
+                }
+            }
+        }
+    }
+}
