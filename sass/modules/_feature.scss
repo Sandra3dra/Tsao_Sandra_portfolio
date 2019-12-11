@@ -1,0 +1,38 @@
+#feature {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%;
+    #featTitle {
+        h2 {
+            font-size: 25px;
+        }
+        p {
+            padding-top: 3px;
+            font-size: 15px;
+        }
+    }
+    #featMain {
+        position: relative;
+        height: 400px;
+        .yBox {
+            position: absolute;
+            width: 40%;
+            height: 85%;
+            background-color: $box-y;
+            margin-top: 10%;
+            margin-left: 2%;
+        }
+        #featWrapper {
+            position: absolute;
+            margin-top: 10%;
+            margin-left: 10%;
+            font-size: 40px;
+            padding-top: 5%;
+            a h3 {
+                margin-bottom: 5%;
+                // cursor: url(../images/b_pointer.png), pointer;a:nth-child(2) h3
+            }
+        }
+    }
+}

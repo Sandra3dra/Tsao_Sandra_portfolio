@@ -1,4 +1,4 @@
-<section id="pp" class="">
+<section id="pp" class="hidden">
     <p id="ppExit">X</p>
     <div class="ppText">
         <h2>Privacy Policy</h2>

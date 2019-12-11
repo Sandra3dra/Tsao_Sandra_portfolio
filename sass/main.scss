@@ -1,11 +1,49 @@
+// sass --watch sass:public/css --style compressed
+
 @import "_vars";
 @import "modules/_header";
-// @import "_mainHero";
-// @import "_feature";
-// @import "_contact";
-// @import "_footer";
+@import "modules/_mainHero";
+@import "modules/_feature";
+@import "modules/_contact";
+@import "modules/_footer";
+@import "modules/_about";
+@import "modules/_video";
 @import "modules/_portfolios.scss";
 
 .hidden {
     display: none;
 }
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    cursor: url(../images/pointer.png), auto; 
+    img, video {
+        width: 100%;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: $main-font;
+    color: $main-g;
+}
+
+p {
+    font-family: $p-font;
+    font-weight: lighter;
+    color: $main-g;
+}
+
+// a:nth-of-type(1) {
+//     &:hover ~ a:nth-of-type(2) h3 {
+//         font-size: 35px;
+//         opacity: 0.4;
+//     }
+// }

@@ -5,9 +5,12 @@
     <title>Sandra Tsao</title>
 </head>
 <body>
+    
+    <h1 class="hidden">Sandra Tsao's Portfolio</h1>
+    <?php include 'header.php';?>
 
-    <div id="videoWrapper">
-        <p>X</p>
+    <div id="videoWrapper" class="hidden">
+        <p id="videoExit">X</p>
         <video controls autoplay muted>
             <source src="/public/media/Tsao_S_demoreel.mp4"
                     type="video/mp4">
@@ -18,9 +21,6 @@
             Sorry, your browser doesn't support embedded videos :(
         </video>
     </div>
-    
-    <h1 class="hidden">Sandra Tsao's Portfolio</h1>
-    <?php include 'header.php';?>
 
     <section id="mainHero">
         <div id="slideShow">
@@ -31,9 +31,15 @@
             <img src="/public/images/5.jpg" alt="picture of Sandra 5">
             <img src="/public/images/6.jpg" alt="picture of Sandra 6">
         </div>
-        <p>Nice to meet you :)</p>
+        <p id="ntmy">Nice to meet you :)</p>
         <div class="yBox"></div>
-        <h2>I'm <span id="nameTag">Sandra Tsao</span>.</h2>
+        <div id="nameHov">
+            <p>- 3D animamtion</p>
+            <p>- Back-end developer</p>
+            <p>- Front-end developer</p>
+            <p>- click <img src="/public/images/arrow.svg" alt="arrow for name"> to know more</p>
+        </div>
+        <h2>I'm <a id="nameTag" href="/about_me.php">Sandra Tsao</a>.</h2>
     </section>
 
     <div id="ks">
@@ -46,7 +52,7 @@
             <h2>Works</h2>
             <p>Click project to see more</p>
         </div>
-        <div id="featMian">
+        <div id="featMain">
             <div class="yBox"></div>
             <div id="featWrapper">
             <?php
@@ -65,8 +71,8 @@
             if($num>0):?>
 
                 <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
-                    <a href="/portfolios.php?id=<?php echo $row['ID'];?>"><h3><?php echo $row["title"];?></h3></a>
-                    <img class="hover_img" src="/public/images/<?php echo $row["hover_img"];?>" alt="hover images">
+                    <a href="/portfolios.php?id=<?php echo $row['ID'];?>"><h3 class="porTitle"><?php echo $row["title"];?></h3></a>
+                    <img class="hover_img hidden" src="/public/images/<?php echo $row["hover_img"];?>" alt="hover images">
                 <?php endwhile; else:?>
                     <h1>Portfolio missing</h1>
                 <?php endif;?>
@@ -82,17 +88,22 @@
                 <h2 class="hidden">Contact Form</h2>
                 <form action="contact/data_contact.php" method="post">
                     <div id="conTop">
-                        <label for="u-name">Name</label>
-                        <input id="u-name" type="text" name="name" placeholder="name">
-
-                        <label for="u-email">Email</label>
-                        <input id="u-email" type="email" name="email" placeholder="email">
-
-                        <label for="e-subject">Subject</label>
-                        <input id="e-subject" type="text" name="subject" placeholder="subject">
-
-                        <label for="e-message">Message</label>
-                        <textarea id="e-message" name="message"></textarea>
+                        <div class="conRow">
+                            <label for="u-name">Your name:</label>
+                            <input id="u-name" type="text" name="name">
+                        </div>
+                        <div class="conRow">
+                            <label for="u-email">Your email:</label>
+                            <input id="u-email" type="email" name="email">
+                        </div>
+                        <div class="conRow">
+                            <label for="e-subject">Subject:</label>
+                            <input id="e-subject" type="text" name="subject">
+                        </div>
+                        <div class="conRow">
+                            <label for="e-message">Message:</label>
+                            <textarea id="e-message" name="message"></textarea>
+                        </div>
                     </div>
                     <button type="submit">Submit</button>
 
@@ -100,6 +111,7 @@
             </div>
         </div>
     </section>
+
 
     <?php include 'footer.php';?>
 </body>
