@@ -1,0 +1,347 @@
+#aboutHero {
+    position: relative;
+    height: 365px;
+    margin-top: 10%;
+    #aboutH1, #aboutH2 {
+        display: none;
+    }
+    #aboutH3 {
+        position: absolute;
+        width: 100%;
+        z-index: -4;
+    }
+    .aboutText {
+        margin-left: 5%;
+        padding-top: 45%;
+        p {
+            font-size: 25px;
+        }
+        h1 {
+            font-size: 60px;
+            color: white;
+        }
+        h2 {
+            font-size: 18px;
+        }
+    }
+}
+
+#aboutMain {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%;
+    h3 {
+        font-size: 35px;
+        color: $main-y;
+        margin-bottom: 10%;
+    }
+    h4, p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .aboutML {
+        margin-top: 10%;
+        p {
+            margin-bottom: 10%;
+        }
+    }
+    .aboutMR {
+        .skillBars {
+            position: relative;
+            width: 100%;
+            .barText {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                margin-left: 5%;
+                margin-bottom: 3%;
+                h4 {
+                    font-size: 18px;
+                }
+            }
+        }
+        .bar1, .bar2, .bar3, .bar4, .bar5, .bar6 {
+            position: absolute;
+            background-color: $box-y;
+            height: 26px;
+            z-index: -3;
+        }
+        .skillBars:nth-of-type(1) {
+            .bar1 {
+                -webkit-animation: expandb1 1s linear 1 both;
+                animation: expandb1 1s linear 1 both;
+                @keyframes expandb1 {
+                    from {
+                    width: 20%;
+                    }
+                
+                    to {
+                    width: 90%;
+                    }
+                }
+                @-webkit-keyframes expandb1 {
+                    0% {
+                    width: 20%;
+                    }
+                
+                    100% {
+                    width: 90%;
+                    }
+                }
+            }
+            .barText p {
+                -webkit-animation: expand1 1s linear 1 both;
+                animation: expand1 1s linear 1 both;
+                @keyframes expand1 {
+                    from {
+                    margin-left: 0%;
+                    }
+                
+                    to {
+                    margin-left: 60%;
+                    }
+                }
+                @-webkit-keyframes expand1 {
+                    0% {
+                    margin-left: 0%;
+                    }
+                
+                    100% {
+                    margin-left: 60%;
+                    }
+                }
+            }
+        }
+        .skillBars:nth-of-type(2) {
+            .bar2 {
+                -webkit-animation: expandb2 1s linear 1 both;
+                animation: expandb2 1s linear 1 both;
+                @keyframes expandb2 {
+                    from {
+                    width: 40%;
+                    }
+                
+                    to {
+                    width: 90%;
+                    }
+                }
+                @-webkit-keyframes expandb2 {
+                    0% {
+                    width: 40%;
+                    }
+                
+                    100% {
+                    width: 90%;
+                    }
+                }
+            }
+            .barText p {
+                -webkit-animation: expand2 1s linear 1 both;
+                animation: expand2 1s linear 1 both;
+                @keyframes expand2 {
+                    from {
+                    margin-left: 0%;
+                    }
+                
+                    to {
+                    margin-left: 50%;
+                    }
+                }
+                @-webkit-keyframes expand2 {
+                    0% {
+                    margin-left: 0%;
+                    }
+                
+                    100% {
+                    margin-left: 50%;
+                    }
+                }
+            }
+        }
+        .skillBars:nth-of-type(3) {
+            .bar3 {
+                -webkit-animation: expandb3 1s linear 1 both;
+                animation: expandb3 1s linear 1 both;
+                @keyframes expandb3 {
+                    from {
+                    width: 40%;
+                    }
+                
+                    to {
+                    width: 75%;
+                    }
+                }
+                @-webkit-keyframes expandb3 {
+                    0% {
+                    width: 40%;
+                    }
+                
+                    100% {
+                    width: 75%;
+                    }
+                }
+            }
+            .barText p {
+                -webkit-animation: expand3 1s linear 1 both;
+                animation: expand3 1s linear 1 both;
+                @keyframes expand3 {
+                    from {
+                    margin-left: 0%;
+                    }
+                
+                    to {
+                    margin-left: 35%;
+                    }
+                }
+                @-webkit-keyframes expand3 {
+                    0% {
+                    margin-left: 0%;
+                    }
+                
+                    100% {
+                    margin-left: 35%;
+                    }
+                }
+            }
+        }
+        .skillBars:nth-of-type(4) {
+            .bar4 {
+                -webkit-animation: expandb4 1s linear 1 both;
+                animation: expandb4 1s linear 1 both;
+                @keyframes expandb4 {
+                    from {
+                    width: 20%;
+                    }
+                
+                    to {
+                    width: 60%;
+                    }
+                }
+                @-webkit-keyframes expandb4 {
+                    0% {
+                    width: 20%;
+                    }
+                
+                    100% {
+                    width: 60%;
+                    }
+                }
+            }
+            .barText p {
+                -webkit-animation: expand4 1s linear 1 both;
+                animation: expand4 1s linear 1 both;
+                @keyframes expand4 {
+                    from {
+                    margin-left: 0%;
+                    }
+                
+                    to {
+                    margin-left: 35%;
+                    }
+                }
+                @-webkit-keyframes expand4 {
+                    0% {
+                    margin-left: 0%;
+                    }
+                
+                    100% {
+                    margin-left: 35%;
+                    }
+                }
+            }
+        }
+        .skillBars:nth-of-type(5) {
+            .bar5 {
+                -webkit-animation: expandb5 1s linear 1 both;
+                animation: expandb5 1s linear 1 both;
+                @keyframes expandb5 {
+                    from {
+                    width: 40%;
+                    }
+                
+                    to {
+                    width: 75%;
+                    }
+                }
+                @-webkit-keyframes expandb5 {
+                    0% {
+                    width: 40%;
+                    }
+                
+                    100% {
+                    width: 75%;
+                    }
+                }
+            }
+            .barText p {
+                -webkit-animation: expand5 1s linear 1 both;
+                animation: expand5 1s linear 1 both;
+                @keyframes expand5 {
+                    from {
+                    margin-left: -10%;
+                    }
+                
+                    to {
+                    margin-left: 30%;
+                    }
+                }
+                @-webkit-keyframes expand5 {
+                    0% {
+                    margin-left: -10%;
+                    }
+                
+                    100% {
+                    margin-left: 30%;
+                    }
+                }
+            }
+        }
+        .skillBars:nth-of-type(6) {
+            .bar6 {
+                -webkit-animation: expandb6 1s linear 1 both;
+                animation: expandb6 1s linear 1 both;
+                @keyframes expandb6 {
+                    from {
+                    width: 20%;
+                    }
+                
+                    to {
+                    width: 60%;
+                    }
+                }
+                @-webkit-keyframes expandb6 {
+                    0% {
+                    width: 20%;
+                    }
+                
+                    100% {
+                    width: 60%;
+                    }
+                }
+            }
+            .barText p {
+                -webkit-animation: expand6 1s linear 1 both;
+                animation: expand6 1s linear 1 both;
+                @keyframes expand6 {
+                    from {
+                    margin-left: -20%;
+                    }
+                
+                    to {
+                    margin-left: 15%;
+                    }
+                }
+                @-webkit-keyframes expand6 {
+                    0% {
+                    margin-left: -20%;
+                    }
+                
+                    100% {
+                    margin-left: 15%;
+                    }
+                }
+            }
+        }
+    }
+}
