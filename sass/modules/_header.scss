@@ -24,10 +24,56 @@
         #hamburger_menu {
             width: 30px;
             z-index: 99;
+            &:hover {
+                .cls-1, .cls-2, .cls-3 {
+                    fill: $hov-y;
+                    transition: all 0.5s ease;
+                }
+            }
         }
         .rot90 {
-            transform: rotate(90deg);
-            transition: all 0.8s ease;
+            .cls-3 {
+                transform: translateY(12px) translateX(-7px) rotate(-155deg);
+                transform-origin: center center;
+            }
+            .cls-1 {
+                transform: translateY(-11px) translateX(-7px) rotate(155deg);
+                transform-origin: center center;
+            }
+            .cls-2 {
+                transform: scale(0) !important;
+                transform-origin: center center;
+            }
+        }
+        .ococ {
+            display: block !important; 
+            -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            @-webkit-keyframes slide-in-right {
+                from {
+                  -webkit-transform: translateX(1000px);
+                          transform: translateX(1000px);
+                  opacity: 0;
+                }
+                to {
+                  -webkit-transform: translateX(0);
+                          transform: translateX(0);
+                  opacity: 1;
+                }
+              }
+              @keyframes slide-in-right {
+                from {
+                  -webkit-transform: translateX(1000px);
+                          transform: translateX(1000px);
+                  opacity: 0;
+                }
+                to {
+                  -webkit-transform: translateX(0);
+                          transform: translateX(0);
+                  opacity: 1;
+                }
+              }
+              
         }
         .mainNav {
             position: fixed;

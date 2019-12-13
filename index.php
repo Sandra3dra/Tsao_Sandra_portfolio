@@ -24,12 +24,12 @@
 
     <section id="mainHero">
         <div id="slideShow">
-            <img src="/public/images/1.jpg" alt="picture of Sandra 1">
-            <img src="/public/images/2.jpg" alt="picture of Sandra 2">
-            <img src="/public/images/3.jpg" alt="picture of Sandra 3">
-            <img src="/public/images/4.jpg" alt="picture of Sandra 4">
-            <img src="/public/images/5.jpg" alt="picture of Sandra 5">
-            <img src="/public/images/6.jpg" alt="picture of Sandra 6">
+            <img id="sld1" src="/public/images/1.jpg" alt="picture of Sandra 1">
+            <img id="sld2" src="/public/images/2.jpg" alt="picture of Sandra 2">
+            <img id="sld3" src="/public/images/3.jpg" alt="picture of Sandra 3">
+            <img id="sld4" src="/public/images/4.jpg" alt="picture of Sandra 4">
+            <img id="sld5" src="/public/images/5.jpg" alt="picture of Sandra 5">
+            <img id="sld6" src="/public/images/6.jpg" alt="picture of Sandra 6">
         </div>
         <p id="ntmy">Nice to meet you :)</p>
         <div class="yBox"></div>
@@ -90,11 +90,11 @@
                     <div id="conTop">
                         <div class="conRow">
                             <label for="u-name">Your name:</label>
-                            <input id="u-name" type="text" name="name">
+                            <input required id="u-name" type="text" name="name">
                         </div>
                         <div class="conRow">
                             <label for="u-email">Your email:</label>
-                            <input id="u-email" type="email" name="email">
+                            <input required id="u-email" type="email" name="email">
                         </div>
                         <div class="conRow">
                             <label for="e-subject">Subject:</label>
@@ -102,7 +102,7 @@
                         </div>
                         <div class="conRow">
                             <label for="e-message">Message:</label>
-                            <textarea id="e-message" name="message"></textarea>
+                            <textarea required id="e-message" name="message"></textarea>
                         </div>
                     </div>
                     <button type="submit">Submit</button>

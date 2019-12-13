@@ -58,4 +58,10 @@
         margin-bottom: 3%;
         font-size: 12px;
     }
+    a {
+        &:hover {
+            color: $hov-y;
+            transition: all 0.5s ease;
+        }
+    }
 }

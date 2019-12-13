@@ -6,7 +6,7 @@
 
 //IF THE FORM IS NOT FILLED OUT
 if(empty($_POST)){
-    echo 'no...';
+    echo 'there is nothing';
     exit;
 }
 
@@ -51,10 +51,68 @@ $headers = array(
 
 // if(mail($recipient, $subject, $message, $headers)){
 if(mail($recipient, $subject, $message, $headers)){
-    echo '<p>Thank you for contacting me, '.$name.'</p>
-        <p>I will get back to you within two business days.</p>  ';
+    echo '
+    <style type="text/css">
+        body {
+            cursor: url(../public/images/pointer.png), auto; 
+        }
+        .thankYou {
+            width:80%; margin-left: auto; margin-right: auto; text-align: center; padding-top: 20%;
+        }
+        p {
+            font-family: "Oswald", "Roboto", sans-serif;
+            font-size: 20px;
+            font-weight: 300;
+        }
+        a {
+            text-decoration: none;
+            font-family:"Teko", Impact, sans-serif;
+            font-size: 35px;
+            color: #febe10;
+            cursor: url(../public/images/b_pointer.png), auto; 
+        }
+        a:hover {
+            color: #ffd67b;
+            transition: all 0.5s ease;
+        }
+    </style>
+    <div class="thankYou">
+        <p>Thank you for contacting me, '.$name.'</p>
+        <p>I will get back to you within two business days.</p>
+        <a href="/index.php">Go Back!</a>
+    </div>
+    ';
 }else{
-    echo '<p>I am sorry, but the mail did not go through :(</p>';
+    echo '
+    <style type="text/css">
+        body {
+            cursor: url(../public/images/pointer.png), auto; 
+        }
+        .thankYou {
+            width:80%; margin-left: auto; margin-right: auto; text-align: center; padding-top: 20%;
+        }
+        p {
+            font-family: "Oswald", "Roboto", sans-serif;
+            font-size: 20px;
+            font-weight: 300;
+        }
+        a {
+            text-decoration: none;
+            font-family:"Teko", Impact, sans-serif;
+            font-size: 35px;
+            color: #febe10;
+            cursor: url(../public/images/b_pointer.png), auto; 
+        }
+        a:hover {
+            color: #ffd67b;
+            transition: all 0.5s ease;
+        }
+    </style>
+    <div class="thankYou">
+        <p>I am sorry, but the mail did not go through :(</p>
+        <a href="/index.php">Go Back!</a>
+    </div>
+    ';
 }
 
 ?>
