@@ -1,11 +1,114 @@
 #portHero {
+    margin-top: 10%;
+    position: relative;
+    height: 380px;
     .deskHero {
-        width: 100%;
+        display: none;
+        z-index: -99;
     }
     .tabHero {
         display: none;
+        z-index: -99;
     }
     .mobHero {
-        display: none;
+        width: 100%;
+        position: absolute;
+        z-index: -99;
+    }
+    .heroText {
+        padding-top: 70%;
+        padding-left: 10%;
+        p {
+            font-size: 25px;
+            font-family: $main-font;
+        }
+        h1 {
+            font-size: 60px;
+            color: $main-y;
+            margin-bottom: 5%;
+        }
+        .purP {
+            font-size: 18px;
+        }
+    }
+}
+
+#mainContent {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    a {
+        font-family: $p-font;
+        color: $main-g;
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 45px;
+        color: $main-y;
+        margin-bottom: 10%;
+    }
+    h3 {
+        font-size: 30px;
+        color: $main-y;
+        // margin-bottom: 5%;
+    }
+    p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .mainCL {
+        display: flex;
+        flex-direction: column;
+        div {
+            margin-bottom: 20%;
+        }
+    }
+    .mainCR {
+        display: flex;
+        flex-direction: column;
+        div {
+            margin-bottom: 10%;
+        }
+    }
+}
+
+#imgDisplay {
+    display: none;
+}
+
+#pn-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    .pn {
+        display: flex;
+        flex-direction: row;
+        svg {
+            width: 11px;
+            margin-left:  5px;
+            margin-right: 5px;
+        }
+        p {
+            font-size: 20px;
+        }
+        &:hover {
+            cursor: url(../images/b_pointer.png), pointer;
+            #pre_arrow .st0, #next_arrow .st0 {
+                fill: $hov-y;
+                transition: all 0.3s ease;
+            }
+            p {
+                color: $hov-y;
+                transition: all 0.3s ease;
+            }
+        }
     }
 }

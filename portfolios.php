@@ -36,7 +36,7 @@
         <div class="heroText">
             <p>Case Study</p>
             <h1><?php echo $row["title"];?></h1>
-            <p><?php echo $row["purposes"];?></p>
+            <p class="purP"><?php echo $row["purposes"];?></p>
         </div>
     </section>
 
@@ -83,13 +83,13 @@
     </section>
 
     <div id="pn-page">
-        <div id="p-page">
+        <div id="p-page" class="pn">
             <svg version="1.1" id="pre_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26.2 45.3" style="enable-background:new 0 0 26.2 45.3;" xml:space="preserve"><style type="text/css"> .st0{fill:#434345;}</style><title>arrow_down</title><path class="st0" d="M25.3,1.7c2.1,3-1,5-1,5l-15.2,16h0.1l15.3,16c0,0,3,2,1,5c-2,3-5.1,1-5.1,1L0,22.7l20.2-22C20.2,0.7,23.2-1.3,25.3,1.7z"/></svg>
             <p>Previous Project</p>
         </div>
-        <div id="n-page">
-            <svg version="1.1" id="next_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26.2 45.3" style="enable-background:new 0 0 26.2 45.3;" xml:space="preserve"><style type="text/css">.st0{fill:#434345;}</style><title>arrow_down</title><path class="st0" d="M0.9,1.7c-2.1,3,1,5,1,5l15.2,16H17l-15.3,16c0,0-3,2-1,5c2,3,5.1,1,5.1,1l20.4-22L6,0.7C6,0.7,3-1.3,0.9,1.7z"/></svg>
+        <div id="n-page" class="pn">
             <p>Next Project</p>
+            <svg version="1.1" id="next_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26.2 45.3" style="enable-background:new 0 0 26.2 45.3;" xml:space="preserve"><style type="text/css">.st0{fill:#434345;}</style><title>arrow_down</title><path class="st0" d="M0.9,1.7c-2.1,3,1,5,1,5l15.2,16H17l-15.3,16c0,0-3,2-1,5c2,3,5.1,1,5.1,1l20.4-22L6,0.7C6,0.7,3-1.3,0.9,1.7z"/></svg>
         </div>
     </div>
     
