@@ -20,7 +20,7 @@
         </div>
         <p id="ntmy">Nice to meet you :)</p>
         <div class="yBox"></div>
-        <div id="nameHov">
+        <div id="nameHov" class="hidden">
             <p>- 3D animamtion</p>
             <p>- Back-end developer</p>
             <p>- Front-end developer</p>

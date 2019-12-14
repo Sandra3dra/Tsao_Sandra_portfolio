@@ -53,6 +53,7 @@
             color: $main-y;
             &:hover {
                 color: $hov-y;
+                transition: all 0.5s ease;
             }
         }
         h2, h3, h4, h5 {
@@ -84,6 +85,41 @@
         &:hover {
             color: $hov-y;
             transition: all 0.3s ease;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #mainFooter {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+        p {
+            margin-bottom: 0%;
+            font-size: 20px;
+        }
+    }
+    #pp {
+        #ppExit {
+            font-size: 25px;
+        }
+        .ppText {
+            ul li, p {
+                font-size: 22px;
+            }
+            p {
+                line-height: 25px;
+            }
+            h2 {
+                font-size: 40px;
+                margin-bottom: 3%;
+            }
+            h3, h4, h5 {
+                font-size: 25px;
+            }
         }
     }
 }
