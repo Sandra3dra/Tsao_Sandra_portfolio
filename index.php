@@ -9,19 +9,6 @@
     <h1 class="hidden">Sandra Tsao's Portfolio</h1>
     <?php include 'header.php';?>
 
-    <div id="videoWrapper" class="hidden">
-        <p id="videoExit">X</p>
-        <video controls autoplay muted>
-            <source src="/public/media/Tsao_S_demoreel.mp4"
-                    type="video/mp4">
-            <source src="/public/media/Tsao_S_demoreel.webm"
-                    type="video/webm">
-            <source src="/public/media/Tsao_S_demoreel.ogg"
-                    type="video/ogg">
-            Sorry, your browser doesn't support embedded videos :(
-        </video>
-    </div>
-
     <section id="mainHero">
         <div id="slideShow">
             <img id="sld1" src="/public/images/1.jpg" alt="picture of Sandra 1">

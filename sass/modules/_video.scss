@@ -5,6 +5,8 @@
     height: 100%;
     z-index: 99;
     background-color: rgb(255, 255, 255, 0.8);
+    -webkit-animation: fade-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: fade-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     #videoExit {
         font-family: $p-font;
         font-size: 18px;
@@ -12,6 +14,10 @@
         margin-right: 5%;
         margin-top: 5%;
         width: 3%;
+        &:hover {
+            color: $hov-y;
+            transition: all 0.5s ease;
+        }
     }
     video {
         width: 90%;
