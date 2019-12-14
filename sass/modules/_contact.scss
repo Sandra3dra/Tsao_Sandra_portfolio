@@ -66,3 +66,58 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    #contact {
+        margin-bottom: 15%;
+        h2 {
+            font-size: 40px;
+        }
+        #contactWrapper {
+            margin-top: 0;
+            position: relative;
+            .yBox {
+                display: block;
+                position: absolute;
+                background-color: $box-y;
+                z-index: -3;
+                width: 215px;
+                height: 318px;
+                margin-left: 10%;
+                margin-top: -5%;
+            }
+            #contactForm {
+                width: 70%;
+                margin-left: 25%;
+                margin-top: 5%;
+                #conTop {
+                    margin-top: 2%;
+                    width: 100%;
+                    .conRow {
+                        margin-bottom: 2%;
+                        width: 95%;
+                    }
+                    label {
+                        font-size: 22px;
+                        margin-top: 2%;
+                        margin-left: 1%;
+                    }
+                    input {
+                        width: 70%;
+                        height: 30px;
+                    }
+                    textarea {
+                        width: 69.5%;
+                        height: 130px;
+                    }
+                }
+                form {
+                    button {
+                        width: 95%;
+                        height: 50px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

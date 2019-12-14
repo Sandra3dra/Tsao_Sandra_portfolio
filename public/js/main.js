@@ -8,7 +8,9 @@
         sld3 = document.querySelector("#sld3"),
         sld4 = document.querySelector("#sld4"),
         sld5 = document.querySelector("#sld5"),
-        sld6 = document.querySelector("#sld6");
+        sld6 = document.querySelector("#sld6"),
+        stHov = document.querySelector("#nameHov"),
+        stTag = document.querySelector("#nameTag");
 
     if (sld1, sld2, sld3, sld4, sld5, sld6 === null) {
         console.log("It's not home page:)");
@@ -19,6 +21,13 @@
         tL.fromTo(sld4, 4, {opacity:1}, {opacity:0});
         tL.fromTo(sld5, 4, {opacity:1}, {opacity:0});
         tL.to(sld1, 3, {opacity:1});
+        stTag.addEventListener("mouseover", function(){
+            stHov.classList.remove("hidden");
+            console.log("You hovered my name!");
+        });
+        stTag.addEventListener("mouseout", function(){
+            stHov.classList.add("hidden");
+        });
     }
     
 

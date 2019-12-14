@@ -345,3 +345,45 @@
         }
     }
 }
+
+@media screen and (min-width: 350px) {
+    #aboutHero {
+        height: 200px;
+        #aboutH3 {
+            display: none;
+        }
+        #aboutH2 {
+            display: block;
+            position: absolute;
+            width: 100%;
+            z-index: -4;
+        }
+        .aboutText {
+            padding-top: 15%;
+        }
+    }
+}
+
+@media screen and (min-width: 460px) {
+    #aboutHero {
+        height: 250px;
+        .aboutText {
+            padding-top: 20%;
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #aboutHero {
+        height: 300px;
+        .aboutText {
+            padding-top: 25%;
+        }
+    }
+}
+
+@media screen and (min-width: 650px) {
+    #aboutHero {
+        height: 350px;
+    }
+}

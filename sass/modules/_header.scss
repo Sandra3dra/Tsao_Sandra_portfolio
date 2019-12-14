@@ -12,7 +12,7 @@
     z-index: 99;
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7609418767507002) 30%, rgba(255,255,255,1) 100%);
-    #phone_icon {
+    #phoneIcon {
         display: none;
     }
     #logoA {
@@ -120,4 +120,130 @@
             }
         }
     }
- }
+}
+
+@media screen and (min-width: 500px) {
+    #mainHeader {
+        width: 80%;
+        padding-top: 5%;
+        padding-right: 10%;
+        padding-left: 10%;
+        #logoA {
+            width: 20%;
+        }
+        .mainNavCon {
+            #hamburger_menu {
+                width: 20px;
+            }
+            .mainNav {
+                width: 40%;
+                padding-top: 20%;
+                .socialMedia {
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #mainHeader {
+        width: 90%;
+        padding-right: 5%;
+        padding-left: 5%;
+        #phoneIcon {
+            display: block;
+            width: 25px;
+            &:hover {
+                .phone {
+                    fill: $hov-y;
+                    transition: all 0.4s ease;
+                }
+                -webkit-animation: shaky 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+                animation: shaky 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+                @-webkit-keyframes shaky {
+                    0%,
+                    100% {
+                      -webkit-transform: rotate(0deg);
+                              transform: rotate(0deg);
+                      -webkit-transform-origin: 50% 50%;
+                              transform-origin: 50% 50%;
+                    }
+                    10% {
+                      -webkit-transform: rotate(8deg);
+                              transform: rotate(8deg);
+                    }
+                    20%,
+                    40%,
+                    60% {
+                      -webkit-transform: rotate(-10deg);
+                              transform: rotate(-10deg);
+                    }
+                    30%,
+                    50%,
+                    70% {
+                      -webkit-transform: rotate(10deg);
+                              transform: rotate(10deg);
+                    }
+                    80% {
+                      -webkit-transform: rotate(-8deg);
+                              transform: rotate(-8deg);
+                    }
+                    90% {
+                      -webkit-transform: rotate(8deg);
+                              transform: rotate(8deg);
+                    }
+                  }
+                  @keyframes shaky {
+                    0%,
+                    100% {
+                      -webkit-transform: rotate(0deg);
+                              transform: rotate(0deg);
+                      -webkit-transform-origin: 50% 50%;
+                              transform-origin: 50% 50%;
+                    }
+                    10% {
+                      -webkit-transform: rotate(8deg);
+                              transform: rotate(8deg);
+                    }
+                    20%,
+                    40%,
+                    60% {
+                      -webkit-transform: rotate(-10deg);
+                              transform: rotate(-10deg);
+                    }
+                    30%,
+                    50%,
+                    70% {
+                      -webkit-transform: rotate(10deg);
+                              transform: rotate(10deg);
+                    }
+                    80% {
+                      -webkit-transform: rotate(-8deg);
+                              transform: rotate(-8deg);
+                    }
+                    90% {
+                      -webkit-transform: rotate(8deg);
+                              transform: rotate(8deg);
+                    }
+                  }
+                  
+            }
+        }
+        #logoA {
+            width: 12%;
+        }
+        .mainNavCon {
+            #hamburger_menu {
+                width: 30px;
+            }
+            .mainNav {
+                padding-right: 5%;
+                padding-top: 15%;
+                ul {
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
