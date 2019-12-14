@@ -25,23 +25,23 @@
             width: 30px;
             z-index: 99;
             &:hover {
-                .cls-1, .cls-2, .cls-3 {
+                .ham-1, .ham-2, .ham-3 {
                     fill: $hov-y;
                     transition: all 0.5s ease;
                 }
             }
         }
         .rot90 {
-            .cls-3 {
+            .ham-3 {
                 transform: translateY(12px) translateX(-7px) rotate(-155deg);
                 transform-origin: center center;
             }
-            .cls-1 {
+            .ham-1 {
                 transform: translateY(-11px) translateX(-7px) rotate(155deg);
                 transform-origin: center center;
             }
-            .cls-2 {
-                transform: scale(0) !important;
+            .ham-2 {
+                transform: scale(0);
                 transform-origin: center center;
             }
         }
