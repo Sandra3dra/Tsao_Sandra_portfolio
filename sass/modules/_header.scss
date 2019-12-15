@@ -247,3 +247,56 @@
         }
     }
 }
+
+@media screen and (min-width: 900px) {
+    #mainHeader {
+        padding-top: 3%;
+        #phoneIcon {
+            width: 35px;
+        }
+        #logoA {
+            width: 10%;
+        }
+        .mainNavCon {
+            #hamburger_menu {
+                width: 40px;
+            }
+            .mainNav {
+                ul a li {
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                }
+                .socialMedia {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #mainHeader {
+        #phoneIcon {
+            width: 25px;
+        }
+        #logoA {
+            width: 7%;
+        }
+        .mainNavCon {
+            #hamburger_menu {
+                width: 30px;
+            }
+            .mainNav {
+                padding-top: 10%;
+                width: 30%;
+                ul a li {
+                    font-size: 30px;
+                    margin-bottom: 30px;
+                }
+                .socialMedia {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}

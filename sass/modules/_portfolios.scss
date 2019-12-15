@@ -193,7 +193,7 @@
         flex-direction: row;
         width: 90%;
         margin-top: 5%;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
         a {
             cursor: url(../images/b_pointer.png), pointer; 
             &:hover {
@@ -229,7 +229,28 @@
     }
     
     #imgDisplay {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 5%;
+        .imgDBot {
+            display: flex;
+            flex-direction: row;
+            margin-top: 3%;
+            width: 100%;
+            img {
+                width: 50%;
+            }
+            .imgDBot-r {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-left: 5%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
     }
     
     #pn-page {
@@ -263,6 +284,111 @@
                 p {
                     color: $hov-y;
                     transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 850px) {
+    #portHero {
+        height: 400px;
+        .deskHero {
+            display: block;
+            width: 100%;
+            position: absolute;
+        }
+        .tabHero {
+            display: none;
+        }
+        .heroText {
+            padding-top: 15%;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #portHero {
+        height: 450px;
+        .heroText {
+            padding-top: 20%;
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    #portHero {
+        height: 500px;
+        .heroText {
+            padding-top: 20%;
+            p {
+                font-size: 30px;
+            }
+            h1 {
+                font-size: 75px;
+                margin-bottom: 1%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #portHero {
+        height: 550px;
+    }
+    #mainContent {
+        .mainCL {
+            width: 55%;
+        }
+    }
+    #imgDisplay {
+        .imgDBot {
+            img {
+                width: 50%;
+            }
+            .imgDBot-r {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-left: 2%;
+                img {
+                    width: 104%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1225px) {
+    #imgDisplay {
+        .imgDBot {
+            .imgDBot-r {
+                img {
+                    width: 105%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1265px) {
+    #imgDisplay {
+        .imgDBot {
+            .imgDBot-r {
+                img {
+                    width: 108%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #imgDisplay {
+        .imgDBot {
+            .imgDBot-r {
+                img {
+                    width: 110%;
                 }
             }
         }

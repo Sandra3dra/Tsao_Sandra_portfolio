@@ -123,3 +123,20 @@
         }
     }
 }
+
+@media screen and (min-width: 900px) {
+    #mainFooter {
+        margin-bottom: 3%;
+    }
+    #pp {
+        #ppExit {
+            font-size: 25px;
+            margin-top: 3%;
+        }
+        .ppText {
+            p {
+                line-height: 28px;
+            }
+        }
+    }
+}
