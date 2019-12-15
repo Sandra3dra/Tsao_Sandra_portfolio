@@ -154,6 +154,7 @@
         #phoneIcon {
             display: block;
             width: 25px;
+            cursor: url(../images/pointer.png), pointer; 
             &:hover {
                 .phone {
                     fill: $hov-y;
