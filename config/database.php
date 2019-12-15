@@ -2,9 +2,10 @@
 
 // this is an object
 class Database{
-    private $host = 'localhost';
-    private $db_name = 'db_portfolio';
-    private $password = '';
+    private $host = 'us-cdbr-iron-east-05.cleardb.net';
+    private $db_name = 'heroku_972321abb42ab23';
+    private $username = 'bd567e7f319df0';
+    private $password = '15f7e4f7';
 
     //people outside of object have access to public
     public $conn;
