@@ -387,3 +387,62 @@
         height: 350px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    #aboutHero {
+        height: 400px;
+        margin-top: 5%;
+        .aboutText {
+            padding-top: 20%;
+            p {
+                font-size: 26px;
+            }
+            h1 {
+                font-size: 75px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+        }
+    }
+    
+    #aboutMain {
+        width: 90%;
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 5%;
+        h3 {
+            font-size: 60px;
+            margin-bottom: 5%;
+        }
+        h4, p {
+            font-size: 20px;
+        }
+        .aboutML {
+            margin-top: 0;
+            width: 50%;
+            p {
+                line-height: 28px;
+            }
+        }
+        .aboutMR {
+            width: 40%;
+            margin-left: auto;
+            .skillBars {
+                .barText {
+                    width: 100%;
+                    margin-left: 3%;
+                    margin-bottom: 10%;
+                    padding-top: 2%;
+                    h4 {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .bar1, .bar2, .bar3, .bar4, .bar5, .bar6 {
+                height: 36px;
+            }
+        }
+    }
+}
