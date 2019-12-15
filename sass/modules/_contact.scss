@@ -36,11 +36,15 @@
                 input {
                     width: 60%;
                     border: $box-y solid 3px;
+                    font-family: $p-font;
+                    color: $main-g;
                 }
                 textarea {
                     width: 59%;
                     border: $box-y solid 3px;
                     height: 60px;
+                    font-family: $p-font;
+                    color: $main-g;
                 }
             }
             form {
@@ -104,10 +108,12 @@
                     input {
                         width: 70%;
                         height: 30px;
+                        font-size: 20px;
                     }
                     textarea {
                         width: 69.5%;
                         height: 130px;
+                        font-size: 18px;
                     }
                 }
                 form {
@@ -117,6 +123,88 @@
                         font-size: 20px;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 850px) {
+    #contact {
+        h2 {
+            margin-left: 5%;
+        }
+        #contactWrapper {
+            .yBox {
+                margin-left: 13%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #contact {
+        margin-bottom: 5%;
+        h2 {
+            margin-left: 10%;
+        }
+        #contactWrapper {
+            .yBox {
+                margin-left: 15%;
+            }
+            #contactForm {
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #contact {
+        margin-bottom: 5%;
+        h2 {
+            margin-left: 10%;
+            font-size: 55px;
+        }
+        #contactWrapper {
+            .yBox {
+                margin-left: 15%;
+                margin-top: -3%;
+                width: 260px;
+                height: 400px;
+            }
+            #contactForm {
+                width: 60%;
+                margin-top: 3%;
+                #conTop {
+                    label {
+                        font-size: 30px;
+                        margin-top: 1%;
+                    }
+                    input {
+                        width: 70%;
+                        height: 50px;
+                        font-size: 30px;
+                    }
+                    textarea {
+                        width: 69.5%;
+                        height: 130px;
+                    }
+                }
+                form {
+                    button {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #contact {
+        #contactWrapper {
+            .yBox {
+                margin-left: 17%;
             }
         }
     }

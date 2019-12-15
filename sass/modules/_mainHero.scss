@@ -80,7 +80,7 @@
     align-items: center;
     margin-bottom: 20%;
     -webkit-animation: bounce-top 2s 3 both;
-    animation: bounce-top 2s 3 both;
+    animation: bounce-top 3s infinite both;
     @-webkit-keyframes bounce-top {
         0% {
           -webkit-transform: translateY(-35px);
@@ -280,6 +280,47 @@
         }
         #arrow_down {
             width: 5%;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #ks {
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #mainHero {
+        margin-top: 3%;
+        width: 800px;
+        height: 450px;
+        margin-bottom: 10%;
+        #slideShow {
+            width: 38%;
+            margin-left: 31%;
+        }
+        #ntmy {
+            font-size: 45px;
+            margin-top: 80px;
+            // margin-left: 10px;
+        }
+        .yBox {
+            width: 290px;
+            height: 320px;
+            margin-left: 10%;
+        }
+        #nameHov {
+            width: 28%;
+            margin-bottom: 70px;
+            p {
+                font-size: 25px;
+            }
+        }
+        h2 {
+            font-size: 87px;
+            margin-bottom: -10px;
+            padding-right: 1%;
         }
     }
 }
