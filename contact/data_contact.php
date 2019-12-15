@@ -16,7 +16,7 @@ $name = '';
 $email = '';
 $subject = '';
 $message = '';
-$recipient = 'SandraTsao2019@gmail.com';
+$recipient = 'herro@sandratsao.com';
 
 // to make a field required, kill the function if the value is "empty"
 //Use GET to pass along message ?=true or ?=false to redirect users after form is sent + make thank you message pop up in JS
@@ -45,8 +45,8 @@ if (isset($_POST['message'])) {
 
 //SEND OUT EMAIL
 $headers = array(
-    'From'=>$name.'<'.$email.'>',
-    'Reply=To'=>'noreply@sandratsao.ca'
+    'From'=>'noreply@sandratsao.com',
+    'Reply=To'=>$name.'<'.$email.'>'
 );
 
 // if(mail($recipient, $subject, $message, $headers)){
