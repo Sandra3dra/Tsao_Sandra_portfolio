@@ -6,6 +6,9 @@ class Database{
     private $db_name = 'heroku_972321abb42ab23';
     private $username = 'bd567e7f319df0';
     private $password = '15f7e4f7';
+    // private $host = 'localhost';
+    // private $db_name = 'db_portfolio';
+    // private $password = '';
 
     //people outside of object have access to public
     public $conn;

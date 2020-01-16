@@ -27,3 +27,7 @@ Head there now - https://sandratsao.com/
 ## Future Plans
 - Design Improvements
 - Front-end enhancements
+
+## Versions
+- 1.0 Design and Functionality
+- 1.5 Logo update and sizes changes

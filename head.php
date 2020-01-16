@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="/public/css/main.css">
 <link rel="icon" type="image/png" href="/public/images/sandra_icon.png">
 <link href="https://fonts.googleapis.com/css?family=Oswald:300%7CTeko&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700%7CJosefin+Sans:300&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>

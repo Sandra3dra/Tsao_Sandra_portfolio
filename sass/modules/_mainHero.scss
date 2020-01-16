@@ -44,10 +44,11 @@
         margin-bottom: 50px;
         width: 40%;
         p {
-            font-size: 14px;
+            font-size: 12px;
+            letter-spacing: -0.5px;
             margin-bottom: 10%;
             &:nth-child(4) {
-                font-size: 12px;
+                font-size: 10px;
             }
             img {
                 margin-bottom: -4px;
@@ -60,7 +61,7 @@
         font-family: $main-font;
         position: absolute;
         bottom: 0;
-        font-size: 50px;
+        font-size: 48px;
         letter-spacing: 1px;
         #nameTag {
             color: $main-y;
@@ -256,6 +257,7 @@
               
             p {
                 font-size: 22px;
+                letter-spacing: -1px;
                 &:nth-child(4) {
                     font-size: 20px;
                 }
@@ -302,7 +304,7 @@
         }
         #ntmy {
             font-size: 45px;
-            margin-top: 70px;
+            margin-top: 10%;
             // margin-left: 10px;
         }
         .yBox {
@@ -311,7 +313,7 @@
             margin-left: 10%;
         }
         #nameHov {
-            width: 28%;
+            width: 30%;
             margin-bottom: 70px;
             p {
                 font-size: 25px;
@@ -320,7 +322,7 @@
         h2 {
             font-size: 87px;
             margin-bottom: -10px;
-            padding-right: 1%;
+            padding-right: 0%;
         }
     }
 }
