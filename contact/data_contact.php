@@ -60,13 +60,13 @@ if(mail($recipient, $subject, $message, $headers)){
             width:80%; margin-left: auto; margin-right: auto; text-align: center; padding-top: 20%;
         }
         p {
-            font-family: "Oswald", "Roboto", sans-serif;
+            font-family: "Josefin Sans", "Oswald", "Roboto", sans-serif;
             font-size: 20px;
             font-weight: 300;
         }
         a {
             text-decoration: none;
-            font-family:"Teko", Impact, sans-serif;
+            font-family: "Amatic SC", cursive, "Teko", Impact, sans-serif;
             font-size: 35px;
             color: #febe10;
             cursor: url(../public/images/b_pointer.png), auto; 
@@ -92,13 +92,13 @@ if(mail($recipient, $subject, $message, $headers)){
             width:80%; margin-left: auto; margin-right: auto; text-align: center; padding-top: 20%;
         }
         p {
-            font-family: "Oswald", "Roboto", sans-serif;
+            font-family: "Josefin Sans", "Oswald", "Roboto", sans-serif;
             font-size: 20px;
             font-weight: 300;
         }
         a {
             text-decoration: none;
-            font-family:"Teko", Impact, sans-serif;
+            font-family: "Amatic SC", cursive, "Teko", Impact, sans-serif;
             font-size: 35px;
             color: #febe10;
             cursor: url(../public/images/b_pointer.png), auto; 
