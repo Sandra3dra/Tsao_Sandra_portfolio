@@ -3,11 +3,15 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10%;
+    margin-top: 20%;
     h2 {
         font-size: 25px;
     }
+    p {
+        margin-bottom: 5%;
+    }
     #contactWrapper {
-        margin-top: 10%;
+        
         .yBox {
             display: none;
         }
@@ -73,6 +77,7 @@
 @media screen and (min-width: 768px) {
     #contact {
         margin-bottom: 15%;
+        margin-top: 5%;
         h2 {
             font-size: 40px;
         }
@@ -133,6 +138,9 @@
         h2 {
             margin-left: 5%;
         }
+        p {
+            margin-left: 5%;
+        }
         #contactWrapper {
             .yBox {
                 margin-left: 13%;
@@ -145,6 +153,9 @@
     #contact {
         margin-bottom: 5%;
         h2 {
+            margin-left: 10%;
+        }
+        p {
             margin-left: 10%;
         }
         #contactWrapper {
@@ -173,21 +184,22 @@
                 height: 400px;
             }
             #contactForm {
-                width: 60%;
+                margin-left: 30%;
+                width: 50%;
                 margin-top: 3%;
                 #conTop {
                     label {
-                        font-size: 30px;
+                        font-size: 25px;
                         margin-top: 1%;
                     }
                     input {
                         width: 70%;
-                        height: 50px;
+                        height: 40px;
                         font-size: 30px;
                     }
                     textarea {
                         width: 69.5%;
-                        height: 130px;
+                        height: 110px;
                     }
                 }
                 form {

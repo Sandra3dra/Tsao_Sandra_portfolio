@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Dec 08, 2019 at 10:10 AM
+-- Generation Time: Apr 03, 2020 at 03:44 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.8
 
@@ -56,7 +56,9 @@ INSERT INTO `tbl_projects` (`ID`, `title`, `purposes`, `description`, `link`, `d
 (3, 'Music Mixer', 'Web Design & Development', 'This website can not be more simple as it is just a drag and drop functional website. Although it is very simple, it showcases the basic javascript usage in a very fun way. Music is always something entertaining to work with. Go ahead and jump in the website now. Create your own very special music mix!', 'https://music-mixer-2018.herokuapp.com/', 'March-April 2019', 'Front-end developer', 'Luisa Valero', 'HTML5 | CSS | JavaScript', 'music_ss.png', 'music_1.jpg', 'music_1t.jpg', 'music_1m.jpg', 'music_2.jpg', 'music_3.jpg', 'music_4.jpg', 'music_5.jpg'),
 (4, 'Imagina', 'Branding, Web design, and Development', 'You Imagine, We Create. We are a company of ignited minds, imaginative solutions and endless ideas. Coming from different parts of the world, we are a collaboration of multidisciplinary designers. We think beyond the predictable boundaries to give your brand the right vision. We are forever keen to enhance human experiences and thrive on giving the best solutions.', 'https://imagina.herokuapp.com/', 'September 2019', 'Front-end Developer | Video Editor', 'Kahani Gajjar, Mariam Khalifa, Luisa Valero', 'HTML5 | CSS | JavaScript', 'imagina_ss.png', 'imagina_1.jpg', 'imagina_1t.jpg', 'imagina_1m.jpg', 'imagina_2.jpg', 'imagina_3.jpg', 'imagina_4.jpg', 'imagina_5.jpg'),
 (5, 'Thermo Security', 'Branding, Web Design, Development, 3D animation', 'HouseCom™ ThermoSecurity™ System is a fully digital, hardwired and wireless (WiFi,Bluetooth) enabled home personal and secure environment control system. All communications with the central system are accessible and controlled through the wall unit, product app. and the secured portal on the parent website. The HouseCom™ ThermoSecurity™ System App is available on both iOS and Android devices.', 'https://thermo-security.herokuapp.com/', 'October 2019', 'Back-end Developer', 'Kahani Gajjar, Kayla Chang, Mariam Khalifa, Luisa Valero', 'HTML5 | CSS | JavaScript | SQL', 'thermo_ss.png', 'thermo_1.jpg', 'thermo_1t.jpg', 'thermo_1m.jpg', 'thermo_2.jpg', 'thermo_3.jpg', 'thermo_4.jpg', 'thermo_5.jpg'),
-(6, 'Favourite Things', 'Web Design & Development', 'This website contains three things picked out by Sandra Tsao that she absolutely love and want to share with you. Go ahead and explore the website. See how Sandra demonstrates her favourites using the interactive features and visual experience through the web.', 'https://favourite-things-of-mine.herokuapp.com/', 'November 2019', 'Front & Back-end Developer ', 'N/A', 'HTML5 | CSS | JavaScript | SQL', 'fav_ss.png', 'fav_1.jpg', 'fav_1t.jpg', 'fav_1m.jpg', 'fav_2.jpg', 'fav_3.jpg', 'fav_4.jpg', 'fav_5.jpg');
+(6, 'Favourite Things', 'Web Design & Development', 'This website contains three things picked out by Sandra Tsao that she absolutely love and want to share with you. Go ahead and explore the website. See how Sandra demonstrates her favourites using the interactive features and visual experience through the web.', 'https://favourite-things-of-mine.herokuapp.com/', 'November 2019', 'Front & Back-end Developer ', 'N/A', 'HTML5 | CSS | JavaScript | SQL', 'fav_ss.png', 'fav_1.jpg', 'fav_1t.jpg', 'fav_1m.jpg', 'fav_2.jpg', 'fav_3.jpg', 'fav_4.jpg', 'fav_5.jpg'),
+(7, 'Physics of Baseball', 'Video Editing, HUD', 'Start with collecting data and information related to the physics of baseball. My parnter and I were able to create some fantastic design and animation for some of the coolest HUD. By compiling the HUD with the edited videos, the story of the man playing baseball was demonstrated within 20 seconds. Along with the audio that gives the audiences an exciting and exceptional audio and visual experience. ', 'shorturl.at/juKM0', 'March 2020', 'Video Editor', 'Luisa Valero', 'After Effect | Adobe Illustrator', 'physics_ss.png', 'physics_1.jpg', 'physics_1t.jpg', 'physics_1m.jpg', 'physics_2.jpg', 'physics_3.jpg', 'physics_4.jpg', 'physics_5.jpg'),
+(8, 'Login Page', 'Web Development, Database Handling', 'This is a website for simple yet functional user login interface. Users are able to easily navigate themselves after logging into the web page. Some of the main features of it is to create, edit, and delete users. Password encryption is also used in the process of making this website as well as some basic preventing of query injection.', 'https://sandra-login.herokuapp.com/', 'March 2020', 'Back-end Developer | Front-end Developer', 'N/A', 'HTML5 | CSS | PHP | MYSQL', 'login_ss.png', 'login_1.jpg', 'login_1t.jpg', 'login_1m.jpg', 'login_2.jpg', 'login_3.jpg', 'login_4.jpg', 'login_5.jpg');
 
 --
 -- Indexes for dumped tables
@@ -76,7 +78,7 @@ ALTER TABLE `tbl_projects`
 -- AUTO_INCREMENT for table `tbl_projects`
 --
 ALTER TABLE `tbl_projects`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

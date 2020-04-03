@@ -8,9 +8,9 @@
 
 <?php include 'header.php';?>
     <section id="aboutHero">
-        <img id="aboutH1" src="/public/images/sandra_1.jpg" alt="sandra's image">
-        <img id="aboutH2" src="/public/images/sandra_2.jpg" alt="sandra's image">
-        <img id="aboutH3" src="/public/images/sandra_3.jpg" alt="sandra's image">
+        <img id="aboutH1" src="./public/images/sandra_1.jpg" alt="sandra's image">
+        <img id="aboutH2" src="./public/images/sandra_2.jpg" alt="sandra's image">
+        <img id="aboutH3" src="./public/images/sandra_3.jpg" alt="sandra's image">
         <div class="aboutText">
             <p>Sandra Tsao</p>
             <h1>About Me</h1>
