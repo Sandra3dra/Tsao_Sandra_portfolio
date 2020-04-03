@@ -22,11 +22,11 @@
         tL.fromTo(sld5, 4, {opacity:1}, {opacity:0});
         tL.to(sld1, 3, {opacity:1});
         stTag.addEventListener("mouseover", function(){
-            stHov.classList.remove("hidden");
+            stHov.classList.add("showNameHov");
             console.log("You hovered my name!");
         });
         stTag.addEventListener("mouseout", function(){
-            stHov.classList.add("hidden");
+            stHov.classList.remove("showNameHov");
         });
     }
     
@@ -60,23 +60,23 @@
     ppExit.addEventListener("click", closePP);
     ppOpen.addEventListener("click", openPP);
 
-    function openDR() {
-        dr.classList.remove("hidden");
-        console.log("demo reel play!");
-    }
+    // function openDR() {
+    //     dr.classList.remove("hidden");
+    //     console.log("demo reel play!");
+    // }
 
-    function closeDR() {
-        dr.classList.add("hidden");
-    }
+    // function closeDR() {
+    //     dr.classList.add("hidden");
+    // }
 
-    if(typeof(dr) != 'undefined' && dr != null){
-        console.log("demo reel is ready to play");
-    } else{
-        console.log('something is wrong with demo reel:(');
-    }
+    // if(typeof(dr) != 'undefined' && dr != null){
+    //     console.log("demo reel is ready to play");
+    // } else{
+    //     console.log('something is wrong with demo reel:(');
+    // }
     
-    drExit.addEventListener("click", closeDR);
-    drOpen.addEventListener("click", openDR);
+    // drExit.addEventListener("click", closeDR);
+    // drOpen.addEventListener("click", openDR);
 
     const prevB = document.querySelector("#p-page"),
         nextB = document.querySelector("#n-page");
@@ -87,15 +87,15 @@
         const currentId = document.querySelector("#webID").innerHTML
         nextId = parseInt(currentId) + Number("1");
         prevId = parseInt(currentId) - Number("1");
-        nextB.setAttribute("href", "/portfolios.php?id=" + nextId);
-        prevB.setAttribute("href", "/portfolios.php?id=" + prevId);
+        nextB.setAttribute("href", "portfolios.php?id=" + nextId);
+        prevB.setAttribute("href", "portfolios.php?id=" + prevId);
         if (currentId > "1") {
             prevB.classList.remove("noNeed");
         } else {
             prevB.classList.add("noNeed");
         }
     
-        if (currentId < "6") {
+        if (currentId < "8") {
             nextB.classList.remove("noNeed");
         } else {
             nextB.classList.add("noNeed");

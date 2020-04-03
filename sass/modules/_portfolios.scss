@@ -116,7 +116,13 @@
     }
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 375px) {
+    #portHero {
+        height: 430px;
+    }
+}
+
+@media screen and (min-width: 380px) {
     #portHero {
         height: 250px;
         .deskHero {

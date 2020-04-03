@@ -1,33 +1,32 @@
 <?php
-class Projects{
-    private $conn;
 
-    // setting variables for table names (found in database)
-    public $proj_table = 'tbl_projects';
+function getProjects($tbl){
+    $pdo = Database::getInstance()->getConnection();
 
-    public function __construct($db){
-        $this->conn = $db;
+    $queryAll = 'SELECT * FROM '.$tbl;
+    $results = $pdo->query($queryAll);
+
+    if($results){
+        return $results;
+    }else{
+        return 'There was a problem accessing the info';
     }
+}
 
-    public function getProjects(){
+function getProjByID($id){
+    $pdo = Database::getInstance()->getConnection();
 
-        $query = 'SELECT * FROM tbl_projects';
+    $query = 'SELECT * FROM `tbl_projects` WHERE ID =:id';
+    $single_project = $pdo->prepare($query);
+    $single_project->execute(
+        array(
+            ':id'=>$id
+        )
+    );
 
-        $stmt = $this->conn->prepare($query);
-
-        $stmt->execute();
-
-        return $stmt;
-    }
-
-    public function getProjByID($id){
-
-        $query = 'SELECT * FROM `tbl_projects` WHERE `ID` ='.$id;
-
-        $stmt = $this->conn->prepare($query);
-
-        $stmt->execute();
-        
-        return $stmt;
+    if($single_project){
+        return $single_project;
+    }else{
+        return '<p>There was a problem accessing the info</p>';
     }
 }

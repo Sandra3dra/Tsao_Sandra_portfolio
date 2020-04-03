@@ -7,7 +7,7 @@ services:
     ports:
       - 8010:80
     environment:
-      IDP_ENVIRONMENT: docker
+      SANDRA_PORTFOLIO: docker
 
   mysql:
     image: mysql:5.7

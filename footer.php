@@ -125,4 +125,4 @@
 <p>&copy; Sandra Tsao. All rights reserved 2019</p>
 <a href="#pp" id="openPP"><p>Privacy Policy</p></a>
 </footer>
-<script type="text/javascript" src="/public/js/main.js"></script>
+<script type="text/javascript" src="./public/js/main.js"></script>

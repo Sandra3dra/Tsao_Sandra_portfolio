@@ -1,25 +1,20 @@
+<?php
+    include_once './config/database.php';
+    include_once './objects/portfolio.php';
+
+    if(isset($_GET['id'])) {
+        $getSingle = getProjByID($_GET['id']);
+    } else {
+        return 'cannot get project info';
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <?php include 'head.php';?>
-
-    <?php
-    //include database and object files
-    include_once './config/database.php';
-    include_once './objects/portfolio.php';
-
-    $database = new Database();
-    $db = $database->getConnection();
-
-    $proj = new Projects($db);
-    if(isset($_GET['id'])) {
-        $stmt = $proj->getProjByID($_GET['id']);
-    }
-
-    $num = $stmt->rowCount();
-
-    if($num>0):?>
-    <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
+    <?php while($row = $getSingle->fetch(PDO::FETCH_ASSOC)):?>
 
     <title><?php echo $row["title"];?></title>
 </head>
@@ -30,11 +25,11 @@
     <?php include 'header.php';?>
 
     <section id="portHero">
-        <img class="deskHero" src="/public/images/<?php echo $row["img_1"];?>" alt="hero image">
-        <img class="tabHero" src="/public/images/<?php echo $row["img_1t"];?>" alt="hero image">
-        <img class="mobHero" src="/public/images/<?php echo $row["img_1m"];?>" alt="hero image">
+        <img class="deskHero" src="./public/images/<?php echo $row["img_1"];?>" alt="hero image">
+        <img class="tabHero" src="./public/images/<?php echo $row["img_1t"];?>" alt="hero image">
+        <img class="mobHero" src="./public/images/<?php echo $row["img_1m"];?>" alt="hero image">
         <div class="heroText">
-            <p>Case Study</p>
+            <p>Project <?php echo $row["ID"];?></p>
             <h1><?php echo $row["title"];?></h1>
             <p class="purP"><?php echo $row["purposes"];?></p>
         </div>
@@ -72,12 +67,12 @@
     </section>
 
     <section id="imgDisplay">
-        <img src="/public/images/<?php echo $row["img_2"];?>" alt="img of <?php echo $row["title"];?>">
+        <img src="./public/images/<?php echo $row["img_2"];?>" alt="img of <?php echo $row["title"];?>">
         <div class="imgDBot">
-            <img src="/public/images/<?php echo $row["img_3"];?>" alt="img of <?php echo $row["title"];?>">
+            <img src="./public/images/<?php echo $row["img_3"];?>" alt="img of <?php echo $row["title"];?>">
             <div class="imgDBot-r">
-                <img src="/public/images/<?php echo $row["img_4"];?>" alt="img of <?php echo $row["title"];?>">
-                <img src="/public/images/<?php echo $row["img_5"];?>" alt="img of <?php echo $row["title"];?>">
+                <img src="./public/images/<?php echo $row["img_4"];?>" alt="img of <?php echo $row["title"];?>">
+                <img src="./public/images/<?php echo $row["img_5"];?>" alt="img of <?php echo $row["title"];?>">
             </div>
         </div>
     </section>
@@ -93,10 +88,7 @@
         </a>
     </div>
     
-    <?php endwhile; 
-    else:?>
-    <h1>Portfolio missing</h1>
-    <?php endif;?>
+    <?php endwhile; ?>
 
 <?php include 'footer.php';?>
 </body>
