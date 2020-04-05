@@ -13,6 +13,9 @@ class Database{
     private $username = "root";
 
     private $password = "root";
+    // private $db_name = 'sandr918_db_portfolio';
+    // private $username = 'sandr918_port';
+    // private $password = 'portfolio2019';
 
     private static $instance = null;
     public $conn;

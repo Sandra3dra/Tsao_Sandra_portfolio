@@ -16,14 +16,14 @@
         z-index: -99;
     }
     .heroText {
-        padding-top: 70%;
+        padding-top: 75%;
         padding-left: 10%;
         p {
             font-size: 25px;
             font-family: $main-font;
         }
         h1 {
-            font-size: 60px;
+            font-size: 50px;
             color: $main-y;
             margin-bottom: 5%;
         }
@@ -96,6 +96,7 @@
         flex-direction: row;
         svg {
             width: 11px;
+            height: 100%;
             margin-left:  5px;
             margin-right: 5px;
         }
@@ -116,13 +117,34 @@
     }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 350px) {
     #portHero {
-        height: 430px;
+        height: 450px;
     }
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 400px) {
+    #portHero {
+        height: 480px;
+    }
+}
+
+@media screen and (min-width: 415px) {
+    #portHero {
+        height: 480px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    #portHero {
+        height: 520px;
+        .heroText {
+            padding-top: 75%;
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
     #portHero {
         height: 250px;
         .deskHero {
