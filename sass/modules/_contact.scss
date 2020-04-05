@@ -11,7 +11,6 @@
         margin-bottom: 5%;
     }
     #contactWrapper {
-        
         .yBox {
             display: none;
         }
@@ -56,17 +55,39 @@
                 flex-direction: column;
                 align-items: center;
                 margin-bottom: 3%;
-                button {
+                #conSub {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
                     width: 90%;
-                    background-color: $hov-y;
-                    color: white;
-                    height: 30px;
-                    font-size: 14px;
-                    font-family: $p-font;
-                    &:hover {
-                        background-color: $box-y;
-                        transition: all 0.5s ease;
-                        box-shadow: -3px 3px $main-y;
+                    #resume {
+                        width: 25%;
+                        font-family: $p-font;
+                        font-size: 10px;
+                        line-height: 12px;
+                        background-color: $main-y;
+                        color: white;
+                        padding: 2px 4px 1px 4px;
+                        text-align: center;
+                        border: $box-y 1px solid;
+                        &:hover {
+                            background-color: $box-y;
+                            transition: all 0.5s ease;
+                            box-shadow: -3px 3px $hov-y;
+                        }
+                    }
+                    button {
+                        width: 64%;
+                        background-color: $hov-y;
+                        color: white;
+                        height: 30px;
+                        font-size: 14px;
+                        font-family: $p-font;
+                        &:hover {
+                            background-color: $box-y;
+                            transition: all 0.5s ease;
+                            box-shadow: -3px 3px $main-y;
+                        }
                     }
                 }
             }
@@ -89,14 +110,14 @@
                 position: absolute;
                 background-color: $box-y;
                 z-index: -3;
-                width: 215px;
+                width: 37%;
                 height: 318px;
-                margin-left: 10%;
+                margin-left: 9%;
                 margin-top: -5%;
             }
             #contactForm {
                 width: 70%;
-                margin-left: 25%;
+                margin-left: 22%;
                 margin-top: 5%;
                 #conTop {
                     margin-top: 2%;
@@ -111,21 +132,30 @@
                         margin-left: 1%;
                     }
                     input {
-                        width: 70%;
+                        width: 65%;
                         height: 30px;
                         font-size: 20px;
                     }
                     textarea {
-                        width: 69.5%;
+                        width: 64.5%;
                         height: 130px;
                         font-size: 18px;
                     }
                 }
                 form {
-                    button {
+                    #conSub {
                         width: 95%;
-                        height: 50px;
-                        font-size: 20px;
+                        #resume {
+                            width: 25%;
+                            font-size: 18px;
+                            line-height: 17px;
+                            padding: 3px 8px 1px 8px;
+                        }
+                        button {
+                            width: 67%;
+                            height: 40px;
+                            font-size: 20px;
+                        }
                     }
                 }
             }
@@ -144,6 +174,7 @@
         #contactWrapper {
             .yBox {
                 margin-left: 13%;
+                width: 33%;
             }
         }
     }
@@ -160,10 +191,41 @@
         }
         #contactWrapper {
             .yBox {
-                margin-left: 15%;
+                margin-left: 19%;
+                width: 28%;
+                margin-top: -25px;
             }
             #contactForm {
-                width: 60%;
+                width: 58%;
+                margin-left: 25%;
+                #conTop {
+                    input {
+                        width: 60%;
+                        height: 30px;
+                        font-size: 20px;
+                    }
+                    textarea {
+                        width: 59.5%;
+                        height: 130px;
+                        font-size: 18px;
+                    }
+                }
+                form {
+                    #conSub {
+                        width: 95%;
+                        #resume {
+                            width: 25%;
+                            font-size: 20px;
+                            padding: 5px 10px 1px 10px;
+                            margin-left: 10px;
+                        }
+                        button {
+                            width: 62%;
+                            height: 45px;
+                            font-size: 20px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -178,14 +240,14 @@
         }
         #contactWrapper {
             .yBox {
-                margin-left: 15%;
+                margin-left: 17%;
                 margin-top: -3%;
-                width: 260px;
-                height: 400px;
+                width: 30%;
+                height: 340px;
             }
             #contactForm {
-                margin-left: 30%;
-                width: 50%;
+                margin-left: 25%;
+                width: 60%;
                 margin-top: 3%;
                 #conTop {
                     label {
@@ -193,18 +255,30 @@
                         margin-top: 1%;
                     }
                     input {
-                        width: 70%;
+                        width: 62%;
                         height: 40px;
                         font-size: 30px;
                     }
                     textarea {
-                        width: 69.5%;
+                        width: 61.5%;
                         height: 110px;
                     }
                 }
                 form {
-                    button {
-                        font-size: 30px;
+                    #conSub {
+                        width: 95%;
+                        #resume {
+                            width: 22%;
+                            font-size: 22px;
+                            line-height: 18px;
+                            padding: 1px 10px -1px 10px;
+                            margin-left: 20px;
+                        }
+                        button {
+                            width: 63%;
+                            height: 45px;
+                            font-size: 30px;
+                        }
                     }
                 }
             }

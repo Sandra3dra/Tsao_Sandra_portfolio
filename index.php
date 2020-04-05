@@ -5,6 +5,8 @@
 
     $tbl = 'tbl_projects';
     $getProject = getProjects($tbl);
+    $tbl_cs = 'tbl_case_study';
+    $getCS = getCS($tbl_cs);
 
 ?>
 
@@ -43,17 +45,34 @@
         <h2>I'm <a id="nameTag" href="about_me.php">Sandra Tsao</a>.</h2>
     </section>
 
+    <section id="caseStudy">
+        <div id="csTitle">
+            <h2>Case Studies</h2>
+            <p>Click to see more</p>
+        </div>
+        <div id="csMain">
+            <div class="yBox"></div>
+            <?php while($row = $getCS->fetch(PDO::FETCH_ASSOC)):?>
+                <a class="csWrapper" href="case_study.php?cs_id=<?php echo $row['cs_id'];?>">
+                    <h3 class="csTitle"><?php echo $row["title"];?></h3>
+                    <p class="csHov"><?php echo $row["short_des"];?></p>
+                    <img class="csImg" src="./public/images/<?php echo $row["img_main"];?>" alt="<?php echo $row["title"];?>">
+                </a>
+            <?php endwhile;?>
+        </div>
+    </section>
+
     <section id="feature">
         <div id="featTitle">
-            <h2>Works</h2>
-            <p>Click project to see more</p>
+            <h2>All Works</h2>
+            <p>Hover and click project to see more</p>
         </div>
         <div id="featMain">
             <div class="yBox"></div>
             <div id="featWrapper">
                 <?php while($row = $getProject->fetch(PDO::FETCH_ASSOC)):?>
                     <a href="portfolios.php?id=<?php echo $row['ID'];?>"><h3 class="porTitle"><?php echo $row["title"];?></h3></a>
-                    <img class="hover_img hidden" src="./public/images/<?php echo $row["hover_img"];?>" alt="hover images">
+                    <img class="hover_img hidden" src="./public/images/<?php echo $row["hover_img"];?>" alt="<?php echo $row["title"];?> hover images">
                 <?php endwhile;?>
             </div>
         </div>
@@ -85,8 +104,10 @@
                             <textarea required id="e-message" name="message"></textarea>
                         </div>
                     </div>
-                    <button type="submit">Submit</button>
-
+                    <div id="conSub">
+                        <a id="resume" href="./public/resume/Sandra Tsao resume.pdf" download="Sandra Tsao's Resume">Download My Resume!</a>
+                        <button type="submit">Submit</button>
+                    </div>
                 </form>
             </div>
         </div>
