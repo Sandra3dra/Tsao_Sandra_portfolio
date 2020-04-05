@@ -25,9 +25,9 @@
     <?php include 'header.php';?>
 
     <section id="portHero">
-        <img class="deskHero" src="./public/images/<?php echo $row["img_1"];?>" alt="hero image">
-        <img class="tabHero" src="./public/images/<?php echo $row["img_1t"];?>" alt="hero image">
-        <img class="mobHero" src="./public/images/<?php echo $row["img_1m"];?>" alt="hero image">
+        <img class="deskHero" src="./public/images/<?php echo $row["img_1"];?>" alt="<?php echo $row["title"];?> hero image">
+        <img class="tabHero" src="./public/images/<?php echo $row["img_1t"];?>" alt="<?php echo $row["title"];?> hero image">
+        <img class="mobHero" src="./public/images/<?php echo $row["img_1m"];?>" alt="<?php echo $row["title"];?> hero image">
         <div class="heroText">
             <p>Project <?php echo $row["ID"];?></p>
             <h1><?php echo $row["title"];?></h1>
