@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Apr 03, 2020 at 03:44 AM
+-- Generation Time: Apr 05, 2020 at 05:03 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.8
 
@@ -19,6 +19,42 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_portfolio`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_case_study`
+--
+
+CREATE TABLE `tbl_case_study` (
+  `cs_id` int(11) NOT NULL,
+  `title` varchar(50) NOT NULL,
+  `purpose` varchar(70) NOT NULL,
+  `lead` varchar(40) NOT NULL,
+  `tech` varchar(80) NOT NULL,
+  `collab` varchar(60) NOT NULL,
+  `date` varchar(20) NOT NULL,
+  `link` varchar(200) NOT NULL,
+  `p_head` varchar(50) NOT NULL,
+  `p` text NOT NULL,
+  `short_des` text NOT NULL,
+  `img_main` varchar(60) NOT NULL,
+  `img_1` varchar(60) NOT NULL,
+  `img_1t` varchar(60) NOT NULL,
+  `img_1m` varchar(60) NOT NULL,
+  `img_2` varchar(60) NOT NULL,
+  `img_3` varchar(60) NOT NULL,
+  `img_4` varchar(60) NOT NULL,
+  `img_5` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbl_case_study`
+--
+
+INSERT INTO `tbl_case_study` (`cs_id`, `title`, `purpose`, `lead`, `tech`, `collab`, `date`, `link`, `p_head`, `p`, `short_des`, `img_main`, `img_1`, `img_1t`, `img_1m`, `img_2`, `img_3`, `img_4`, `img_5`) VALUES
+(1, 'Roku Flashback', 'UX/UI, Web Design and Development', 'Front-end Developer | Back-end Developer', 'HTML | Vue.js | AJAX | PHP', 'Luisa Valero', 'April 2020', 'https://github.com/SandraTsao/tsao_s_valero_l_Roku_Flashback.git', 'Flashback of visual entertainment', 'For this project, I was first started to understand Vue.js. Along the way of discovering the convenience that this front-end framework can bring to the web development, my partner and I were able to create this wonderful and fun Netflix-look-alike web page. We have designed two difference interfaces to distinguish between kid users and adult users, as well as separating the contents for different ages. While this is a website for all human beings, we are also planning on making the whole web page accessible and more user friendly.', 'Roku Flashback is a Vue.js based website for all ages to explore classic movies, TV shows, and music from long time ago.Subscribers can use this Flashback app to access three separate flashback features: movies, TV,  and music. Those distinct categories of entertainment from 1950, 1960, 1970, 1980, and 1990.', 'roku_ss.jpg', 'roku_1.jpg', 'roku_1t.jpg', 'roku_1m.jpg', 'roku_2.jpg', 'roku_3.jpg', 'roku_4.jpg', 'roku_5.jpg'),
+(2, 'Keep It Neutral', 'Branding, Web Design and Development, Social Media Marketing', 'Back-end Developer', 'HTML | SASS/CSS3 | Javascript | PHP | MYSQL | Vue.js ', 'Kahani Gajjar, Kayla Chang, Mariam Khalifa, Luisa Valero', 'January-April 2020', 'keepitneutral.ca', 'A Neutral World for All', 'Starting from working with a group of talented people, we came up with the campaign, Keep It Neutral. After finalizing the core belief of this campaign, we focused our mind on social media marketing. Since our target audiences are teenagers from 14 to 19 years old, we had to do research on what teenagers are mostly on these days. The theme colours of this campaign are very popping and contains both cold and warm colours for difference people. I was able to dive into the world of Content management system (CMS) and build a functional and easy to navigate user interface.', 'Keep it Neutral wants to create a community that openly talks about HIV/AIDS. The goal is a world that’s “HIV Neutral” — where HIV is no longer transmittable or stigmatized. Here you’ll find ways to start conversations that celebrate love, encourage safety, and stop the spread of HIV.', 'kin_ss.jpg', 'kin_1.jpg', 'kin_1t.jpg', 'kin_1m.jpg', 'kin_2.jpg', 'kin_3.jpg', 'kin_4.jpg', 'kin_5.jpg');
 
 -- --------------------------------------------------------
 
@@ -65,6 +101,12 @@ INSERT INTO `tbl_projects` (`ID`, `title`, `purposes`, `description`, `link`, `d
 --
 
 --
+-- Indexes for table `tbl_case_study`
+--
+ALTER TABLE `tbl_case_study`
+  ADD PRIMARY KEY (`cs_id`);
+
+--
 -- Indexes for table `tbl_projects`
 --
 ALTER TABLE `tbl_projects`
@@ -73,6 +115,12 @@ ALTER TABLE `tbl_projects`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `tbl_case_study`
+--
+ALTER TABLE `tbl_case_study`
+  MODIFY `cs_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tbl_projects`
