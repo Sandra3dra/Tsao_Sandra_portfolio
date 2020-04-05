@@ -128,12 +128,13 @@
     margin-left: 5%;
     svg {
         width: 6px;
+        height: 100%;
         margin-left:  5px;
         margin-right: 5px;
     }
     p {
         font-size: 14px;
-        margin-top: 5px;
+        margin-top: 0px;
     }
     &:hover {
         cursor: url(../images/b_pointer.png), pointer;
@@ -148,6 +149,12 @@
     }
 }
 
+@media screen and (min-width: 350px) {
+    #csHero {
+        height: 430px;
+    }
+}
+
 @media screen and (min-width: 375px) {
     #csHero {
         height: 450px;
@@ -158,12 +165,26 @@
         }
         p {
             font-size: 16px;
-            margin-top: 5px;
         }
     }
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 400px) {
+    #csHero {
+        height: 480px;
+    }
+}
+
+@media screen and (min-width: 430px) {
+    #csHero {
+        height: 550px;
+        .heroText {
+            padding-top: 80%;
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
     #csHero {
         height: 250px;
         .deskHero {

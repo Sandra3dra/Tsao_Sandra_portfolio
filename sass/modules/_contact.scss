@@ -83,6 +83,7 @@
                         height: 30px;
                         font-size: 14px;
                         font-family: $p-font;
+                        border: $box-y 1px solid;
                         &:hover {
                             background-color: $box-y;
                             transition: all 0.5s ease;

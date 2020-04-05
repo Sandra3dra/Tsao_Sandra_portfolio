@@ -7,7 +7,8 @@
                 <h2 class="hidden">Main Navigation</h2>
                 <ul>
                     <a href="about_me.php"><li>About Me</li></a>
-                    <a href="index.php?#feature"><li>My Work</li></a>
+                    <a href="index.php?#caseStudy"><li>Case Studies</li></a>
+                    <a href="index.php?#feature"><li>My Works</li></a>
                     <a href="index.php?#contact"><li>Contact Me</li></a>
                     <a href="./public/resume/Sandra Tsao resume.pdf" download="Sandra Tsao's Resume"><li>Download My Resume</li></a>
                 </ul>
