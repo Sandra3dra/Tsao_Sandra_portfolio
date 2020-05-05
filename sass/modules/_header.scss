@@ -86,7 +86,7 @@
             z-index: -1;
             background: rgb(255, 255, 255, 0.8);
             ul {
-                width: 60%;
+                width: 62%;
                 margin-left: auto;
             }
             ul a li {
@@ -243,7 +243,7 @@
                 padding-right: 5%;
                 padding-top: 15%;
                 ul {
-                    width: 40%;
+                    width: 42%;
                 }
                 ul a li {
                     font-size: 24px;
@@ -282,6 +282,30 @@
     }
 }
 
+@media screen and (min-width: 1000px) {
+    #mainHeader {
+        .mainNavCon {
+            .mainNav {
+                ul {
+                    width: 38%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    #mainHeader {
+        .mainNavCon {
+            .mainNav {
+                ul {
+                    width: 35%;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 1200px) {
     #mainHeader {
         #phoneIcon {
@@ -298,6 +322,9 @@
             .mainNav {
                 padding-top: 10%;
                 width: 30%;
+                ul {
+                    width: 43%;
+                }
                 ul a li {
                     font-size: 28px;
                     margin-bottom: 30px;

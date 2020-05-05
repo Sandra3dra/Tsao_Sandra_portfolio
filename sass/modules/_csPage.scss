@@ -90,6 +90,14 @@
                     font-size: 25px;
                     margin-bottom: 3%;
                 }
+                a {
+                    font-family: $p-font;
+                    color: $main-g;
+                    &:hover {
+                        color: $hov-y;
+                        transition: all ease 0.4s;
+                    }
+                }
             }
         }
         #csP {
@@ -342,7 +350,7 @@
                         font-size: 35px;
                         margin-bottom: 5%;
                     }
-                    p {
+                    a {
                         font-size: 20px;
                     }
                 }
@@ -456,7 +464,7 @@
                         font-size: 45px;
                         margin-bottom: 5%;
                     }
-                    p {
+                    a {
                         font-size: 25px;
                         line-height: 28px;
                     }
