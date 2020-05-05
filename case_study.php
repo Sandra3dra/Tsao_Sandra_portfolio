@@ -57,7 +57,7 @@
                 </div>
                 <div class="Info">
                     <h3>Link</h3>
-                    <p><?php echo $row["link"];?></p>
+                    <a href="<?php echo $row["link"];?>" target="_blank"><?php echo $row["link"];?></a>
                 </div>
             </div>
         </div>

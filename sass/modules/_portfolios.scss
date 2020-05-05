@@ -414,11 +414,15 @@
 @media screen and (min-width: 1280px) {
     #imgDisplay {
         .imgDBot {
+            img {
+                width: 50%;
+            }
             .imgDBot-r {
+                margin-left: 3.7%;
                 img {
-                    width: 110%;
+                    width: 105%;
                 }
             }
         }
     }
-}
+} 

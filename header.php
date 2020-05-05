@@ -3,23 +3,23 @@
     <a href="index.php" id="logoA"><img id="logo" src="./public/images/logo_gif.gif" alt="sandra tsao logo"></a>
     <div class="mainNavCon">
         <svg id="hamburger_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 32"><defs><style>.ham-1, .ham-2, .ham-3{fill:#434345;}</style></defs><title>Artboard 1</title><rect class="ham-2" y="13" width="40" height="6" rx="2"/><rect class="ham-1" width="40" height="6" rx="2"/><rect class="ham-3" y="26" width="40" height="6" rx="2"/></svg>
-            <nav class="mainNav hidden">
-                <h2 class="hidden">Main Navigation</h2>
-                <ul>
-                    <a href="about_me.php"><li>About Me</li></a>
-                    <a href="index.php?#caseStudy"><li>Case Studies</li></a>
-                    <a href="index.php?#feature"><li>My Works</li></a>
-                    <a href="index.php?#contact"><li>Contact Me</li></a>
-                    <a href="./public/resume/Sandra Tsao resume.pdf" download="Sandra Tsao's Resume"><li>Download My Resume</li></a>
-                </ul>
+        <nav class="mainNav hidden">
+            <h2 class="hidden">Main Navigation</h2>
+            <ul>
+                <a href="about_me.php"><li>About Me</li></a>
+                <a href="index.php?#caseStudy"><li>Case Studies</li></a>
+                <a href="index.php?#feature"><li>My Works</li></a>
+                <a href="index.php?#contact"><li>Contact Me</li></a>
+                <a href="./public/resume/Sandra Tsao resume.pdf" download="Sandra Tsao's Resume"><li>Download My Resume</li></a>
+            </ul>
 
-                <nav class="socialMedia">
-                    <h3 class="hidden">Social Media</h3>
-                    <div class="smIcon">
-                        <a href="https://www.instagram.com/Sandra3dra" target="_blank"><svg id="instagram" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551.03 551.03"><defs><style>.cls-1{fill:#434345;}</style></defs><title>instagram</title><path class="cls-1" d="M386.88,0H164.16C73.64,0,0,73.64,0,164.16V386.88C0,477.39,73.64,551,164.16,551H386.88C477.39,551,551,477.39,551,386.88V164.16C551,73.64,477.39,0,386.88,0ZM495.6,386.88A108.73,108.73,0,0,1,386.88,495.6H164.16A108.73,108.73,0,0,1,55.43,386.88V164.16A108.73,108.73,0,0,1,164.16,55.43H386.88A108.73,108.73,0,0,1,495.6,164.16V386.88Z"/><path class="cls-1" d="M275.52,133C196.93,133,133,196.93,133,275.52S196.93,418,275.52,418,418,354.1,418,275.52,354.1,133,275.52,133Zm0,229.6a87.09,87.09,0,1,1,87.08-87.08A87.09,87.09,0,0,1,275.52,362.6Z"/><circle class="cls-1" cx="418.31" cy="134.07" r="34.15"/></svg></a>
-                        <a href="https://www.linkedin.com/in/sandratsao0405" target="_blank"><svg id="linkedin" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 364.59 364.59"><defs><style>.cls-1{fill:#434345;}.cls-2{fill:#fff;}</style></defs><title>linkedin</title><rect class="cls-1" width="364.59" height="364.59"/><path class="cls-2" d="M85.8,55.37A30.65,30.65,0,0,1,116.24,86c0,17.57-14.62,30.81-30.64,30.44-16.25.32-30.53-13.25-30.52-30.56A30.66,30.66,0,0,1,85.8,55.37Zm0,0"/><path class="cls-2" d="M103.54,309.18H67.77a8.41,8.41,0,0,1-8.41-8.41V148.15a8.4,8.4,0,0,1,8.41-8.41h35.77a8.4,8.4,0,0,1,8.41,8.41V300.77a8.41,8.41,0,0,1-8.41,8.41Zm0,0"/><path class="cls-2" d="M309.51,193.34a57.94,57.94,0,0,0-57.94-57.93h-9.18A51.66,51.66,0,0,0,197.3,162a4.56,4.56,0,0,0-.47-.06V143.23a3.49,3.49,0,0,0-3.49-3.49H148.7a3.49,3.49,0,0,0-3.49,3.49V305.69a3.49,3.49,0,0,0,3.49,3.49h45.61a3.49,3.49,0,0,0,3.49-3.49V211.84A29.76,29.76,0,0,1,227,182a29.5,29.5,0,0,1,29.84,29.51v94.24a3.49,3.49,0,0,0,3.49,3.49H306a3.48,3.48,0,0,0,3.48-3.49V193.34Zm0,0"/></svg></a>
-                    </div>
-                </nav>
+            <nav class="socialMedia">
+                <h3 class="hidden">Social Media</h3>
+                <div class="smIcon">
+                    <a href="https://www.instagram.com/Sandra3dra" target="_blank"><svg id="instagram" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551.03 551.03"><defs><style>.cls-1{fill:#434345;}</style></defs><title>instagram</title><path class="cls-1" d="M386.88,0H164.16C73.64,0,0,73.64,0,164.16V386.88C0,477.39,73.64,551,164.16,551H386.88C477.39,551,551,477.39,551,386.88V164.16C551,73.64,477.39,0,386.88,0ZM495.6,386.88A108.73,108.73,0,0,1,386.88,495.6H164.16A108.73,108.73,0,0,1,55.43,386.88V164.16A108.73,108.73,0,0,1,164.16,55.43H386.88A108.73,108.73,0,0,1,495.6,164.16V386.88Z"/><path class="cls-1" d="M275.52,133C196.93,133,133,196.93,133,275.52S196.93,418,275.52,418,418,354.1,418,275.52,354.1,133,275.52,133Zm0,229.6a87.09,87.09,0,1,1,87.08-87.08A87.09,87.09,0,0,1,275.52,362.6Z"/><circle class="cls-1" cx="418.31" cy="134.07" r="34.15"/></svg></a>
+                    <a href="https://www.linkedin.com/in/sandratsao0405" target="_blank"><svg id="linkedin" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 364.59 364.59"><defs><style>.cls-1{fill:#434345;}.cls-2{fill:#fff;}</style></defs><title>linkedin</title><rect class="cls-1" width="364.59" height="364.59"/><path class="cls-2" d="M85.8,55.37A30.65,30.65,0,0,1,116.24,86c0,17.57-14.62,30.81-30.64,30.44-16.25.32-30.53-13.25-30.52-30.56A30.66,30.66,0,0,1,85.8,55.37Zm0,0"/><path class="cls-2" d="M103.54,309.18H67.77a8.41,8.41,0,0,1-8.41-8.41V148.15a8.4,8.4,0,0,1,8.41-8.41h35.77a8.4,8.4,0,0,1,8.41,8.41V300.77a8.41,8.41,0,0,1-8.41,8.41Zm0,0"/><path class="cls-2" d="M309.51,193.34a57.94,57.94,0,0,0-57.94-57.93h-9.18A51.66,51.66,0,0,0,197.3,162a4.56,4.56,0,0,0-.47-.06V143.23a3.49,3.49,0,0,0-3.49-3.49H148.7a3.49,3.49,0,0,0-3.49,3.49V305.69a3.49,3.49,0,0,0,3.49,3.49h45.61a3.49,3.49,0,0,0,3.49-3.49V211.84A29.76,29.76,0,0,1,227,182a29.5,29.5,0,0,1,29.84,29.51v94.24a3.49,3.49,0,0,0,3.49,3.49H306a3.48,3.48,0,0,0,3.48-3.49V193.34Zm0,0"/></svg></a>
+                </div>
             </nav>
-        </div>
+        </nav>
+    </div>
 </header>
